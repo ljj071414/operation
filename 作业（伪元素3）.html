@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+      .tooltip {
+          position: relative;
+          padding: 10px 1opx;
+          border: 1px solid #000;
+          display: inline-block;
+          background-color: #fff;
+          width: 200px;
+          height: 100px;
+          top: 10px;
+      }
+      .tooltip .caret:before {
+          width: 10px;
+          height: 10px;
+          border-left: 1px solid #000;
+          border-top: 1px solid  #000;
+          background-color: #fff;
+          display: inline-block;
+          transform: rotateZ(45deg);
+          position: absolute;
+          top: -6px;
+          left: 10px;
+      }
+      .tooltip .caret:before {
+          content: '';
+          display: block;
+          clear: both;
+      }
+    </style>
+</head>
+<body>
+    <div class="tooltip">
+      <span class="caret box1"></span>
+      
+    </div>
+</body>
+</html>
